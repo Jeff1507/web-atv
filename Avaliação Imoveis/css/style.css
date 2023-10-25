@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&display=swap');
+:root {
+  --primary: #00b98e;
+  --secondary: #effdf5;
+  --light: #effdf5;
+  --dark: #0e2e50;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  /*Fonte: Heebo*/
+}
+.header{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.header-logo a{
+  font-size: 48px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 800;
+}
+.header-menu nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.header-menu nav ul li{
+  list-style: none;
+}
+#header-home{
+  color: var(--primary);
+}
+.header-menu nav ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--secondary);
+}
+.main-img{
+  width: 50%;
+  height: 50%;
+}
+.main-img figure img{
+  width: 100%;
+  height: 50%;
+}
+.main-texto{
+  width: 50%;
+  padding: 60px;
+}
+.main-texto .main-h1{
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--dark);
+}
+span{
+  color: var(--primary);
+}
+
+
+
