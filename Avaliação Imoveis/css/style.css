@@ -12,6 +12,8 @@
   font-family: 'Heebo', sans-serif;
   /*Fonte: Heebo*/
 }
+section{
+}
 .header{
   background-color: white;
   display: flex;
@@ -31,6 +33,11 @@
   color: var(--primary);
   font-weight: 800;
 }
+@media (max-width: 800px){
+  .header-logo a{
+    font-size: 32px;
+  }
+}
 .header-menu nav ul{
   display: flex;
   align-items: center;
@@ -48,6 +55,11 @@
   text-decoration: none;
   color: var(--dark);
   font-weight: 600;
+}
+@media (max-width: 800px){
+  .header-menu nav ul li a{
+    font-size: 18px;
+  }
 }
 .main{
   display: flex;
@@ -74,11 +86,21 @@
   font-weight: 800;
   color: var(--dark);
 }
+@media (max-width: 800px){
+  .main-texto-h1 h1{
+    font-size: 36px;
+  }
+}
 .main-texto-h1 span{
   color: var(--primary);
 }
 .main-texto-p p{
   font-size: 20px;
+}
+@media (max-width: 800px){
+  .main-texto-p p{
+    font-size: 16px;
+  }
 }
 .main-texto-btn a{
   background-color: var(--primary);
@@ -88,6 +110,12 @@
   font-size: 24px;
   text-decoration: none;
 
+}
+@media (max-width: 800px){
+  .main-texto-btn a{
+    font-size: 18px;
+    padding: 15px 50px;
+  }
 }
 .sec-titulo{
   text-align: center;
@@ -100,6 +128,16 @@
 .sec-titulo p{
   font-size: 20px;
   margin-top: 20px;
+}
+@media (max-width: 800px){
+  .sec-titulo h2{
+    color: var(--dark);
+    font-size: 32px;
+  }
+  .sec-titulo p{
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }
 .sec-1{
   padding: 30px 4%;
@@ -163,19 +201,6 @@
 .sec-2{
   padding: 30px 4%;
 }
-.sec-2-titulo{
-  text-align: center;
-  padding: 50px;
-}
-.sec-2-titulo h2{
-  color: var(--dark);
-  font-size: 64px;
-  
-}
-.sec-2-titulo p{
-  font-size: 20px;
-  margin-top: 20px;
-}
 .sec-2-cards{
   display: flex;
   justify-content: center;
@@ -231,6 +256,12 @@
   text-decoration: none;
   color: var(--secondary);
 }
+@media (max-width: 800px){
+  .sec-2-btn a{
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+}
 /* SEÇAO 3 */
 .sec-3{
   padding: 30px 4%;
@@ -248,6 +279,23 @@
   margin-bottom: 40px;
   font-size: 24px;
 }
+@media (max-width: 800px){
+  .footer-titulo{
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .footer-links .links a{
+    color: var(--light);
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+  }
+  .footer-info .info p{
+    color: white;
+    font-size: 16px;
+  }
+}
 .footer-info .info{
   display: flex;
   gap: 20px;
@@ -259,6 +307,11 @@
 .footer-info .info p{
   color: white;
   font-size: 20px;
+}
+@media (max-width: 800px){
+  .footer-info .info p{
+    font-size: 16px;
+  }
 }
 .footer-info .footer-social{
   margin: 20px 0;
@@ -279,13 +332,19 @@
   font-size: 20px;
   margin: 5px 0;
 }
+@media (max-width: 800px){
+  
+  .footer-links .links a{
+    font-size: 16px;
+    margin: 5px;
+  }
+}
 .seta-cima figure img{
   padding: 300px 0 0 0;
   width: 50px;
 }
 /**/
 @media (max-width: 800px){
-
   .header{
     flex-direction: column;
   }
@@ -317,6 +376,11 @@
   .footer-info .footer-social{
     justify-content: center;
     align-items: center;
+  }
+  .footer-info .info{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
   }
   .seta-cima figure img{
     padding: 0;
