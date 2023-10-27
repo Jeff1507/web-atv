@@ -310,6 +310,12 @@ section{
   width: 50%;
 }
 @media (max-width: 800px){
+  .form-1{
+    flex-wrap: wrap;
+  }
+  .form-1 input{
+    width: 100%;
+  }
   .form input{
     font-size: 18px;
   }
@@ -390,6 +396,7 @@ section{
     font-size: 16px;
     margin: 5px;
   }
+  
 }
 .seta-cima figure img{
   padding: 300px 0 0 0;
@@ -429,6 +436,7 @@ section{
     justify-content: center;
     align-items: center;
   }
+  
   .footer-info .info{
     display: flex;
     gap: 10px;
